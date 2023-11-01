@@ -1,5 +1,5 @@
 .html {
-  background-color:#fefefe
+  background-color: #fefefe;
 }
 .headerBox {
   display: flex;
@@ -103,7 +103,7 @@ body{
 .logodiv img {
     padding-left: 152px;
     padding-top: 4px;
-    width: 200px; 
+    width: 300px;
     height: auto; 
 }
 
@@ -116,12 +116,10 @@ body{
     grid-column: span 14;
     width: 100%;
     margin-top:90px; /* Add space between the topbar and headlinebar */
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
 }
   
-
 
 .headlinelogo {
   width: 100%;
@@ -172,7 +170,7 @@ body{
   padding-bottom: 2rem;
   border-bottom: 2px solid black;
   grid-column: span 14;
-
+  margin-bottom: 1rem;
 
 }
 
@@ -197,4 +195,47 @@ body{
 
 #demo {
   color: black;
+}
+
+#middle {
+  grid-template-columns: repeat(14, 1fr);
+  display: grid;
+  grid-column: span 14;
+}
+
+.left_box {
+  grid-column: span 3;
+  align-self: start;
+  padding: 0px 1rem;
+  border-right: 0.75px solid black;
+}
+
+.center_box {
+  grid-column: span 8;
+  font-size: 1.5rem;
+  align-self: start;
+  padding: 0px 1rem;
+  border-right: 0.75px solid black;
+}
+
+.right_box {
+  grid-column: span 3;
+  align-self: start;
+  padding: 0px 1rem;
+}
+
+.dateComplaints {
+  grid-column: span 2;
+}
+
+.right_box_box {
+  grid-column: span 2;
+}
+
+.fixedheadline {
+  grid-column: span 5;
+}
+
+.title {
+  text-transform: upppercase;
 }
